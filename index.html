@@ -5,67 +5,171 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="John Doe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Website</title>
+    <title>Netflix Suomi - katso sarjoja ja elokuvia verkossa</title>
+    <link rel="stylesheet" href="styles.css"> 
+
 </head>
 <body>
-    <div class="Above the fold"></div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="articles.html">Articles</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <div class="hero-section">
 
-        </ul>
+    <img class="logo" src="Netflix-Logo-Streaming-Platform-PNG-removebg-preview.webp" style="background-color: transparent;">
 
-    <h1>Frontend Developer</h1>
-    <h3>html only with proper layout, no styling</h2>
+    <div class="nav-right">
+    <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Suomi &#9663;</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="#">Suomi</a>
+        <a href="#">English</a>
+        <a href="#">Svenska</a>
+    </div>
+    </div>
+    <button class="kirjaudu">Kirjaudu sisään</button>
+    </div>
+    
+    <div class="hero-section-text">
+    <h1>Rajattomasti elokuvia, sarjoja ja paljon muuta</h1>
+    <h4>Hinta alkaen 9,49 €. Peruuta milloin vain.</h4>
 
-    </nav>
+    <p>Haluatko aloittaa katselun? Kirjoita sähköpostiosoitteesi luodaksesi tilin tai käynnistääksesi jäsenyytesi uudelleen.</p>
+    </div>
 
-    <h2>Projects</h2>
-    <p>HTML Only Portfolio</p>
-    <p>Calculator</p>
-    <p>Quiz App</p>
-    <p>Countdown Timer</p>
-    <p>Product Upcoming Page</p>
+    <div class="yhteys">
+    <div class="sähköpostipalkki">
+        <input type="text" id="name" autocomplete="off" placeholder=" " class="form_input" />
+        <label for="name" class="form_label">Sähköposti</label>
+    </div>
+    <input class="aloitanyt" type="submit" value="Aloita nyt   >">
+    </div>
 
-    <h2>Work Experience</h2>
-    <p>roadmap.sh</p>
-    <p>Solved all the frontend projects</p>
-    <p>Visit my Profile</p>
+    </div> 
+    
+    <div class="tausta">
+    
+    <h2>Nousussa nyt</h2>
 
-    <h2>OpenSource Work</h2>
-    <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
-    <p>Visit my GitHub Profile</p>
+    
+    <h2>Enemmän syitä liittyä</h2>
 
-    <h2>Education</h2>
-    <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. ORganized 30 sessions.</p>
+    <div class="wrapper">
+    <div class="yksi">
+    <h3>Nauti ohjelmistasi</h3>
+    <p>Katso älytelevisioilla, PlayStationilla, Xboxilla, Chromecastilla, Apple TV:llä, Blu-ray-soittimilla, ym.</p>
+    <img class="pikkuikonit" src="computericon.jpg">
+    </div>
+    
+    <div class="kaksi">
+    <h3>Lataa ohjelmia laitteeseesi, niin voit katsoa niitä ilman nettiä</h3>
+    <p>Tallenna suosikkisi helposti, niin sinulla on aina katsottavaa.</p>
+    </div>
 
-    <p>Courses I took: </p>
-    <p>-Object Oriented Programming</p>
-    <p>-Data Structures and Algorithms</p>
-    <p>-Web Engineering</p>
-    <p>-Artificial Intelligence</p>
-    <p>-Human Computer Interaction</p>
-    <p>-Computer Graphics</p>
-    <p>-Database Management Systems</p>
-    <p>-Distributed Database Systems</p>
+    <div class="kolme">
+    <h3>Katso missä vain</h3>
+    <p>Katsele elokuvia ja sarjoja ilman rajoituksia puhelimella, tabletilla, läppärillä ja telkkarilla.</p>
+    </div>
 
-    <h2>Reviews from my Teachers</h2>
+    <div class="neljä">
+    <h3>Luo profiileja lapsille</h3>
+    <p>Lähetä lapset seikkailemaan suosikkihahmojensa seuraan lasten omalle alueelle, joka sisältyy ilmaiseksi jäsenyyteesi.</p>
+    </div>
 
-    <p>John was a brilliant student: always stood out with his assignments.</p>
-    <p>Jane Doe, Assistant Professor</p>
+    </div>
 
-    <p>John was a brilliant student; always stood out with his assignments.</p>
-    <p>Jane Doe, Assistant Professor</p>
 
-    <p>John was a brilliant student; always stood out with his assignments.</p>
-    <p>Jane Doe, Assistant Professor</p>
+    
+    <h2>Usein kysytyt kysymykset</h2>
+        <div class="collapsible-wrapper">
+        <button type="button" class="collapsible">Mikä Netflix on?</button>
+        <div class="content">
+        <p class="ukkteksti">Netflix on striimauspalvelu, joka tarjoaa laajan valikoiman palkittuja tv-sarjoja, elokuvia, animea, dokumentteja ja paljon muuta. Palvelua voi käyttää tuhansilla laitteilla, joissa on internet-yhteys.
+        Voit katsoa niin paljon kuin haluat, milloin haluat, ilman yhtäkään mainosta - edulliseen kuukausihintaan. Aina tulee uutta löydettävää, sillä uusia sarjoja ja elokuvia lisätään joka viikko!</p>
+        </div>
+
+        <button type="button" class="collapsible">Paljonko Netflix maksaa?</button>
+        <div class="content">
+        <p class="ukkteksti">Voit katsoa Netflixiä älypuhelimella, tabletilla, älytelevisiolla, kannettavalla tietokoneella tai striimauslaitteella kiinteään kuukausihintaan. Kuukausimaksut ovat 9,49 € - 17,99 €. Ei lisäkustannuksia eikä sopimuksia.</p>
+        </div>
+
+        <button type="button" class="collapsible">Missä voin katsoa?</button>
+        <div class="content">
+        <p class="ukkteksti">Katso missä vain, milloin vain. Kirjaudu sisään Netflix-tilillesi, niin voit saman tien alkaa katsoa ohjelmia osoitteessa netflix.com tietokoneellasi tai millä tahansa laitteella, jossa on internet-yhteys ja Netflix-sovellus, esimerkiksi älytelevisiolla, älypuhelimella, tabletilla, striimauslaitteella ja pelikonsolilla.
+
+        Voit myös ladata suosikkiohjelmasi iOS- tai Android-sovelluksella. Lataamalla ohjelmat laitteeseen voit katsoa niitä reissussa ja ilman nettiyhteyttä. Ota Netflix mukaan kaikkialle.</p>
+        </div>
+
+        <button type="button" class="collapsible">Miten voin perua tilauksen?</button>
+        <div class="content">
+        <p class="ukkteksti">Netflix on joustava. Ei rasittavia sopimuksia ja sitoumuksia. Voit sulkea tilisi helposti netissä kahdella klikkauksella. Ei peruutusmaksuja - voit avata ja sulkea tilisi milloin haluat.</p>
+        </div>
+
+        <button type="button" class="collapsible">Mitä Netflixissä voi katsoa?</button>
+        <div class="content">
+        <p class="ukkteksti">Netflixissä on kattava kirjasto elokuvia, dokumentteja, tv-sarjoja, animea, palkittuja Netflix-alkuperäisohjelmia ja paljon muuta. Katso niin paljon kuin haluat, milloin haluat.</p>
+        </div>
+
+        <button type="button" class="collapsible">Sopiiko Netflix lapsille?</button>
+        <div class="content">
+        <p class="ukkteksti">Netflixin lasten alue sisältyy jäsenyyteesi. Sen avulla vanhemmat voivat varmistaa, että lapset katsovat vain koko perheelle sopivia TV-sarjoja ja elokuvia omassa tilassaan.
+
+        Lasten profiileissa on PIN-suojattu lapsilukko, jonka avulla voit asettaa ikärajan lasten katsomalle sisällölle tai estää tiettyjen nimikkeiden katsomisen kokonaan.</p>
+        </div>
+        </div>
+    
+
+        <p>Haluatko aloittaa katselun? Kirjoita sähköpostiosoitteesi luodaksesi tilin tai käynnistääksesi jäsenyytesi uudelleen.</p>
+        
+        <div class="yhteys">
+            <div class="sähköpostipalkki">
+            <input type="text" id="name" autocomplete="off" placeholder=" " class="form_input" />
+            <label for="name" class="form_label">Sähköposti</label>
+            </div>
+        <input class="aloitanyt" type="submit" value="Aloita nyt   >">
+        </div>
+
+    <div>
+
+    </div>
 
     <footer>
-        (C) all rights reserved 2025
+
+    <p class="puhelinnumero">Kysyttävää? Soita numeroon <u>0800 05903</u></p>
+
+    <ul class="lista">
+        <p>UKK</p>
+        <p>Ohjekeskus</p>
+        <p>Tili</p>
+        <p>Mediakeskus</p>
+        <p>Sijoittajasuhteet</p>
+        <p>Työpaikat</p>
+        <p>Lunasta lahjakortteja</p>
+        <p>Osta lahjakortteja</p>
+        <p>Katselutavat</p>
+        <p>Käyttöehdot</p>
+        <p>Tietosuoja</p>
+        <p>Evästeasetukset</p>
+        <p>Yrityksen tiedot</p>
+        <p>Ota yhteyttä</p>
+        <p>Nopeustesti</p>
+        <p>Oikeudellinen takuu</p>
+        <p>Oikeudellsiet ilmoitukset</p>
+        <p>Vain Netflixissä</p>
+        <p>Mainosvalinnat</p>
+        </ul>
+
+        <div class="alaosan-kieli">
+        <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Suomi &#9663;</button>
+        <div id="myDropdown" class="dropdown-content">
+        <a href="#">Suomi</a>
+        <a href="#">English</a>
+        <a href="#">Svenska</a>
+        </div>
+        </div>
+
+        <p class="vasuriin">Neflix Suomi</p>
+        <p class="vasuriin" style="font-size: 13px;">Tämä sivu varmistaa Googlen reCAPTCHA-toiminnon avulla, ettet ole robotti. <u>Lisätietoja.</u></p>
+        </div>
     </footer>
+    
+<script src="script.js"></script>
 </body>
 </html>
